@@ -1,5 +1,3 @@
-import { Todo } from "./types";
-
 export const initialTodos: Array<Todo> = [
   {
     text: "Walk the dog",
