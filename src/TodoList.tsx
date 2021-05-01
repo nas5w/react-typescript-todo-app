@@ -1,5 +1,5 @@
 import React from 'react';
-import { Todo, ToggleComplete } from './types';
+// import { Todo, ToggleComplete } from './types';
 import { TodoListItem } from './TodoListItem';
 
 interface TodoListProps {
@@ -13,9 +13,9 @@ export const TodoList: React.FC<TodoListProps> = ({
 }) => {
 	return (
 		<ul>
-			{todos.map((todo) => (
+			{todos.map((todo, i) => (
 				<TodoListItem
-					key={todo.text}
+					key={'todoItem' + i}
 					todo={todo}
 					toggleComplete={toggleComplete}
 				/>

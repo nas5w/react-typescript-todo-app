@@ -1,5 +1,5 @@
 import React from 'react';
-import './TodoListItem.css';
+// import './TodoListItem.css';
 
 interface TodoListItemProps {
 	todo: Todo;
@@ -14,6 +14,7 @@ export const TodoListItem: React.FC<TodoListItemProps> = ({
 		<li>
 			<label className={todo.complete ? 'complete' : undefined}>
 				<input
+					className="checkbox"
 					type="checkbox"
 					onChange={() => toggleComplete(todo)}
 					checked={todo.complete}
