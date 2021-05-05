@@ -24,7 +24,7 @@ const App: React.FC = () => {
 
 	return (
 		<React.Fragment>
-			<h2>To Do:</h2>
+			{/* <h2>To Do:</h2> */}
 			<TodoList todos={todos} toggleComplete={toggleComplete} />
 			<AddTodoForm addTodo={addTodo} />
 		</React.Fragment>
