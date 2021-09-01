@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { initialTodos } from "./initialTodos";
 import { TodoList } from "./TodoList";
 import { AddTodoForm } from "./AddTodoForm";
+import { Todo, ToggleComplete, AddTodo } from './types'
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState<Array<Todo>>(initialTodos);
