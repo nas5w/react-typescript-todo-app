@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { initialTodos } from "./initialTodos";
 import { TodoList } from "./TodoList";
 import { AddTodoForm } from "./AddTodoForm";
+import { User } from './User'
 import { Todo, ToggleComplete, AddTodo } from './types'
 
 const App: React.FC = () => {
@@ -26,6 +27,7 @@ const App: React.FC = () => {
     <React.Fragment>
       <TodoList todos={todos} toggleComplete={toggleComplete} />
       <AddTodoForm addTodo={addTodo} />
+      <User />
     </React.Fragment>
   );
 };
